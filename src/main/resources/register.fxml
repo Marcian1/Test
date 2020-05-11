@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefHeight="400" prefWidth="600" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationController">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+
+    <Label text="Username:" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+
+    <TextField fx:id="usernameField" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+
+    <Label text="Password:" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+
+    <Label text="Role:" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+
+    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
+    </ChoiceBox>
+
+    <Text fx:id="registrationMessage" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="3" GridPane.rowIndex="15">
+        <Button onAction="#handleRegisterAction" text="Register" />
+    </HBox>
+   <Button fx:id="Back" mnemonicParsing="false" onAction="#goBack" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mail" wrappingWidth="63.73675346374512" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adress" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <TextField fx:id="FullName" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+   <TextField fx:id="Adress" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+   <TextField fx:id="PhoneNumber" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+   <TextField fx:id="Mail" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

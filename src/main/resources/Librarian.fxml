@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LibrarianController">
+   <children>
+      <TableView fx:id="Available" layoutX="35.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="AvailableColumn" prefWidth="199.20000076293945" text="Available" />
+        </columns>
+      </TableView>
+      <TableView fx:id="Unavailable" layoutX="235.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="UnavailableColumn" prefWidth="197.6000213623047" text="Unavailable" />
+        </columns>
+      </TableView>
+      <TableView fx:id="Issued" layoutX="435.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="IssuedColumn" prefWidth="197.60003662109375" text="Issued" />
+        </columns>
+      </TableView>
+      <Button fx:id="addBookButton" layoutX="83.0" layoutY="327.0" mnemonicParsing="false" onAction="#add" text="Add Book" />
+      <Button fx:id="goBack" mnemonicParsing="false" onAction="#goBackAction" text="Go Back" />
+   </children>
+</AnchorPane>
